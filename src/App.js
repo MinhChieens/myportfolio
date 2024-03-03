@@ -10,11 +10,13 @@ function App() {
     <div className="App">
       <>
        <Routes >
-        <Route path='/' element= {<Layout></Layout>} >
-          <Route index element={<Home/>}></Route>
-          <Route path='/about' element={<About/>}></Route>
-          <Route path='/contact' element={<Contact/>}></Route>
-        </Route>
+
+          <Route path='/' element= {<Layout></Layout>} >
+            <Route path='/myportfolio' index element={<Home/>}></Route>
+            <Route path='/about' element={<About/>}></Route>
+            <Route path='/contact' element={<Contact/>}></Route>
+          </Route>
+  
        </Routes>
       </>
     </div>
